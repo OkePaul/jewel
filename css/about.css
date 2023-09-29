@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #f1f1f1;
+}
+.container{
+    width: 85%;
+}
+@media (max-width: 1040px){
+    .container{
+        width: 95%;
+    }
+}
+@media (max-width: 500px){
+    .container{
+        width: 100%;
+    }
+}
+
+.abt-disp{
+    width: 100%;
+    margin-left: -.5%;
+    margin-right: -35%;
+    height: 50vw;
+}
+h6{
+    color: rgb(240, 245, 196);
+    padding-top: 10%;
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: -3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.abt-p {
+    padding-top: 10%;
+    font-size: 4.5rem;
+    font-weight: lighter;
+    color: #000;
+}
+
+.abt-par {
+    font-size: 3.1rem;
+    color: #6f6175;
+    margin-top: 70px;
+}
+
+.abt-disp-p {
+    font-size: 1.6rem;
+    font-style: normal;
+    margin-top: 8%;
+}
+@media (max-width: 1024px){
+    .abt-disp-text{
+        height: 75vh;
+        margin-right: 10%;
+        margin-bottom: 0; 
+    }
+    .abt-p{
+        margin-top: 25%;
+    }
+    .abt-par{
+        margin-top: 10%;
+    }
+    .abt-disp-p{
+        font-size: 2.5rem;
+        margin-top: 10%;
+        margin-bottom: 0%;
+    }
+}
+@media (max-width: 500px){
+    .abt-disp-text{
+        height: 75vh;
+        margin-right: 10%;
+        margin-bottom: 0; 
+    }
+    .abt-p{
+        margin-top: 25%;
+        font-size: 3.5rem;
+    }
+    .abt-par{
+        margin-top: 10%;
+    }
+    .abt-disp-p{
+        font-size: 2.5rem;
+        margin-top: 10%;
+        margin-bottom: 0%;
+    }
+}
+@media (max-width: 330px){
+    .abt-p{
+        margin-top: 20%;
+        font-size: 2.9rem;
+    }
+    .abt-par{
+        margin-top: 15%;
+        font-size: 2.3rem;
+    }
+    .abt-disp-p{
+        font-size: 1.8rem;
+        margin-top: 15%;
+        margin-bottom: 0%;
+    }
+}
+
+.belief{
+    margin-top: -19%;
+    display: flex;
+}
+.one{
+    flex: 1;
+    background: #ffffff;
+    margin-right: 30px;
+    box-shadow: #6f6175 20px solid;
+}
+.two{
+    flex: 1;
+    background: #fff;
+    margin-left: 30px;
+}
+.belief-img{
+    width: 190px;
+    height: 180px;
+    padding: 30px 30px 0px 30px;
+}
+.one_p{
+    padding: 0 40px 30px 30px;
+    font-size: 20px;
+}
+.h5{
+    padding: 15% 0 0 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+@media (max-width: 1030px){
+    .belief{
+        margin-top: 15%;
+        margin-left: 0%; 
+    }
+}
+@media (max-width: 770px){
+    .belief{
+        margin-top: 25%;
+        margin-left: -1%; 
+    }
+}
+@media (max-width: 500px){
+    .belief{
+        display: inline-block;
+        margin-top: 80%;
+        margin-left: -2%; 
+    }
+    .one{
+        margin-right: 0;
+    }
+    .two{
+        margin-left: 0;
+    }
+}
+@media (max-width: 370px){
+    .belief{
+        margin-top: 90%;
+    }
+}
+
+.team{
+    margin-top: 7%;
+    padding-top: 20px; 
+}
+.mem{
+    width: 400px;
+    height: 450px;
+}
+h3{
+    font-size: 40px;
+    font-weight: 2px;
+}
+.member1{
+    display: flex;
+}
+.member2{
+    display: flex;
+    margin-top: 10%;
+}
+.abt-mem{
+    float: left;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.abt-mem p{
+    font-size: 20px;
+}
+.sub{
+    font-size: 26px;
+    font-weight: lighter;
+    color: #bbbbbb;
+}
+@media (max-width: 1030px){
+    .abt-mem{
+        margin-left: 5%;
+        margin-right: 3%;
+    }
+    .abt-mem p{
+        font-size: 22px;
+    }
+}
+@media (max-width: 770px) {
+    .mem{
+        width: 350px;
+        height: 500px;
+    }
+}
+@media (max-width: 500px){
+    .mem{
+        width: 350px;
+        height: 500px;
+    }
+    .member1{
+        display: inline-block;
+    }
+    .member2{
+        display: inline-block;
+        margin-top: 4%;
+    }
+    .abt-mem{
+        float: none;
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+}
+@media (max-width: 360px){
+    .mem{
+        width: 325px;
+        height: 460px;
+    }
+}

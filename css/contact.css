@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f3f3f334;
+    /*background: rgba(206, 219, 219, 0.616);*/
+}
+
+.cont{
+    display: flex;
+}
+article{
+    width: 500px;
+    float: left;
+
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.mail{
+    height: 450px;
+}
+
+.contact-form{
+    float: right;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin-left: 6%;
+    width: 500px;
+    margin-top: 2%;
+}
+.form {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding-top: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}
+.form textarea{
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    outline: none;
+    padding-top: 20px;
+    cursor: pointer;
+    border: none;
+    margin-bottom: -35px;
+    background: transparent;
+}
+
+.form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.form label::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    left: 0px;
+    bottom: -1px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    
+}
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name, 
+.form input:valid + .label-name .content-name,
+.form textarea:focus + .label-name .content-name,
+.form textarea:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+.form input:focus + .label-name::after, 
+.form input:valid + .label-name::after,
+.form textarea:focus + .label-name::after,
+.form textarea:valid + .label-name::after{
+    transform: translateX(0%);
+}
+button {
+    border: none;
+    outline: none;
+    height: 50px;
+    color: #fff;
+    width: 20%;
+    font-size: 20px;
+    background: #ff267e;
+    cursor: pointer;
+    margin-top: 40px;
+}
+button:hover{
+    background: rgb(108, 151, 44);
+}
+
+@media (max-width: 1030px){
+    article{
+        margin-left: 3%;
+    }
+    .mail{
+        width: 100%;
+        margin-right: 10px;
+        margin-left: -15%;
+    }
+    .contact-form{
+        margin-right: 2%;
+        margin-left: 4%;
+    }
+}
+@media (max-width: 500px){
+    .cont{
+        display: inline-block;
+    }
+    article{
+        float: none;
+        margin-top: 20px;
+        width: 90vw;
+        margin-left: -7%;
+        margin-left: 17px;
+        margin-right: 10px;
+    }
+    .mail{
+        width: 90vw;
+        margin-left: -7%;
+    }
+    
+    .contact-form{
+       float: none;
+       margin-top: 20px;
+       width: 90vw;
+       margin-left: 17px;
+       margin-right: 10px;
+    }
+}
