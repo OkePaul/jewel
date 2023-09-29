@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KREGENCE::..Our_works</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="src/imgs/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="src/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/assets/fontawesome/css/fontawesome.min.css">
+    
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/works.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>kregence</h1>
+        </div>
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+    
+        <div class="overlay"></div>
+    
+        <nav>
+            <ul class="first">
+                <li>
+                    <a style="color: mediumpurple" href="home.html">What we do</a>
+                    <img class="arrow" src="img/arrow.gif" />
+                    <div class="border"></div>
+                    <ul>
+                        <li>
+                            <a href="branding.html">Branding</a>
+                        </li>
+                        <li>
+                            <a href="#">Design</a>
+                        </li>
+                        <li>
+                            <a href="#">Content Creation</a>
+                        </li>
+                        <li>
+                            <a href="#">Marketing</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="second">
+                <li class="li">
+                    <a href="#">Our works</a>
+                    <img class="arrow" src="img/arrow.gif" />
+                    <div class="border"></div>
+                </li>
+                <li class="li">
+                    <a href="about.html">About us</a>
+                    <img class="arrow" src="img/arrow.gif" />
+                    <div class="border"></div>
+                </li>
+                <li class="li">
+                    <a href="contact.html">Contact</a>
+                    <img class="arrow" src="img/arrow.gif" />
+                    <div class="border"></div>
+                </li>
+    
+            </ul>
+        </nav>
+    </header>
+
+    <div class="disp-text">
+        <h1 class="p">
+            We help Companies design beautiful solutions that help them actualize their beautiful ideas
+        </h1>
+    
+        <p class="disp-p">Our projects -</p>
+    </div>
+
+    <div class="works">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="1mg-2">
+                        <img class="img slide-in from-left" src="img/images (36).jpeg" width="620" />
+                        <p class="img-p slide-in from-left">
+                            <h1>Shopkite</h1>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-sm-6">
+                    <div class="img-1">
+                        <img class="img slide-in from-right" src="img/images (34).jpeg" width="620" />
+                        <p class="img-p slide-in from-right">
+                            <h1>Design</h1>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-sm-6">
+                    <div class="1mg-3">
+                        <img class="img slide-in from-left" src="img/images (35).jpeg" width="620" />
+                        <p class="img-p slide-in from-left">
+                            <h1>Content Creation</h1>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-sm-6">
+                    <div class="img-4">
+                        <img class="img slide-in from-right" src="img/images (41).jpeg" width="620" />
+                        <p class="img-p slide-in from-right">
+                            <h1>Marketing</h1>
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="border-2"></div>
+
+    <footer>
+        <div class="pa-1">
+            <p class="hi">Send us your mail at:</p>
+            <p class="hello">
+                hello@kregence.com
+            </p>
+        </div>
+
+        <div class="middle">
+            <p class="mid">Follow us on:</p>
+            <a class="btn" href="#">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a class="btn" href="#">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="btn" href="#">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="src/assets/fontawesome/js/fontawesome.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="src/js/kregence.js"></script>
+</body>
+</html>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+    $('.menu-toggle').click(function () {
+        $('.overlay').toggleClass('open-overlay', 50);
+        $('nav').toggleClass('nav-open', 700);
+        $(this).toggleClass('open');
+    })
+</script>
